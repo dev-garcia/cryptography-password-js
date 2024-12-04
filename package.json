@@ -1,0 +1,49 @@
+{
+  "name": "cryptography-password-js",
+  "version": "0.0.1",
+  "description": "A secure zero-dependency password hashing library for Node.js using scrypt+HMAC with built-in rate limiting and timing attack protection.",
+  "main": "dist/lib/hash.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "node --test src/tests/hash.test.js",
+    "benchmark": "node src/benchmarks/performance.js"
+  },
+  "keywords": [
+    "password",
+    "hash",
+    "cryptography",
+    "bcryptjs",
+    "bcrypt",
+    "security",
+    "node",
+    "javascript",
+    "typescript"
+  ],
+  "author": {
+    "name": "dev-garcia",
+    "url": "https://github.com/dev-garcia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-garcia/cryptography-password-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dev-garcia/cryptography-password-js/issues"
+  },
+  "homepage": "https://github.com/dev-garcia/cryptography-password-js#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "bcryptjs": "^2.4.3",
+    "typescript": "^5.0.0"
+  }
+}
