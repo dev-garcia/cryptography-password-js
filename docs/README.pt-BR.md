@@ -110,6 +110,15 @@ if (ehValida) {
 }
 ```
 
+### Requisitos de armazenamento da base de dados
+
+```sql
+-- Esquema recomendado
+CREATE TABLE users (
+  password VARCHAR(258) -- Mínimo exigido: 258 caracteres para armazenamento de hash
+);
+```
+
 ## Benchmarks
 
 ```bash

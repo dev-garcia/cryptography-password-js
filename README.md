@@ -110,6 +110,15 @@ if (isValid) {
 }
 ```
 
+### Database Storage Requirements
+
+```sql
+-- Recommended schema
+CREATE TABLE users (
+  password VARCHAR(258) -- Required minimum: 258 characters for hash storage
+);
+```
+
 ## Benchmarks
 
 ```bash
