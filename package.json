@@ -1,6 +1,6 @@
 {
   "name": "cryptography-password-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A secure zero-dependency password hashing library for Node.js using scrypt+HMAC with built-in rate limiting and timing attack protection.",
   "main": "dist/lib/hash.js",
   "types": "dist/types/index.d.ts",
